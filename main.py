@@ -4,14 +4,7 @@ from Base.Basic import *
 from Base.funciones import *
 from Base.tB import *
 
-def init(A, B, C):
-    pi = np.pi
-    #a1, a2
-    a = [ 5, 10 ]
-    d = 10
-    #xf, yf, zf
-    F = [ 1, 1, 1 ]
-
+def init(A, B, C, F, a, d):
     H = getSqrt( F, A, B, C )
     Angle = getHabc( F, A, B, C, d )
     """
