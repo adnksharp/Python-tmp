@@ -4,7 +4,7 @@ from Base.Basic import *
 from Base.funciones import *
 from Base.tB import *
 
-def init(A, B, C, F, a, d):
+def init(A, B, C, F, a, d, g):
     H = getSqrt( F, A, B, C )
     Angle = getHabc( F, A, B, C, d )
     """
@@ -70,4 +70,8 @@ def init(A, B, C, F, a, d):
 
     print( "H: ", H, "\nAngulos: ", Angle, "\nTa, Ra...: ", tst, "\nQ: ", Q )
 
-    Figure(P, P1a, P2a, P3a, P1b, P2b, P3b, P4b, P1c, P2c, P3c, P4c, a)
+    print( "A: ", P1a, P2a, P3a )
+    print( "B: ", P1b, P2b, P3b, P4b )
+    print( "C: ", P1c, P2c, P3c, P4c )
+
+    Figure(P, P1a, P2a, P3a, P1b, P2b, P3b, P4b, P1c, P2c, P3c, P4c, a, g)
